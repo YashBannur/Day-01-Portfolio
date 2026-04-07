@@ -17,6 +17,8 @@
     </nav>
   </header>
 
+   <!-- Hero Section
+   - A welcoming introduction with a brief description and a call-to-action button to view projects. -->
   <main>
     <section class="hero">
       <h2>Hello, I'm Yash 👋</h2>
@@ -24,17 +26,52 @@
       <button type="button" onclick="scrollToSection('projects')">View Work</button>
     </section>
 
+    <!-- About Me Section
+    - A concise bio highlighting my passion for frontend development and your approach to building interfaces. -->
     <section id="about">
       <h2>About Me</h2>
       <p>I am a passionate developer learning frontend step by step. I enjoy building modern interfaces with thoughtful layouts, smooth interactions, and strong visual hierarchy.</p>
     </section>
 
+    <!-- Projects Section
+- A showcase of my projects with images, titles, and brief descriptions. Each project card has a hover effect that reveals more details about the project. -->
     <section id="projects">
       <h2>Projects</h2>
       <div class="projects-grid">
-        <article class="card">Project 1</article>
-        <article class="card">Project 2</article>
-        <article class="card">Project 3</article>
+    <a href="https://yashbannur.github.io/Day-01-Portfolio/" target="_blank">
+      <article class="card">
+
+        <div class="card-image-wrapper">
+        <img src="./Assets/01-Project.png" class="card-image">
+
+        <div class="card-description">
+         A clean and modern portfolio website showcasing my frontend development skills. Built with HTML, CSS, and JavaScript with smooth animations and responsive design.
+        </div>
+      </div>
+
+         <div class="card-content">
+         <h4>My Portfolio</h4>
+          </div>
+
+      </article>
+    </a>
+
+        
+        <article class="card">
+          
+          <img src="https://via.placeholder.com/300x180?text=Project+2" alt="Project 2" class="card-image">
+          <div class="card-content">
+            <h4>Project 2</h4>
+            <p class="card-description">Coming soon...</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://via.placeholder.com/300x180?text=Project+3" alt="Project 3" class="card-image">
+          <div class="card-content">
+            <h4>Project 3</h4>
+            <p class="card-description">Coming soon...</p>
+          </div>
+        </article>
       </div>
     </section>
 
