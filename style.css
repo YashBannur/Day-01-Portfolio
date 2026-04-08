@@ -173,6 +173,11 @@ section p {
   margin: 0 0 0.5rem 0;
   font-size: 1rem;
   color: var(--text);
+  text-decoration: none;
+}
+
+.projects-grid a {
+  text-decoration: none;
 }
 
 .card-description {
