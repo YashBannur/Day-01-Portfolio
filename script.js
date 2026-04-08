@@ -1,12 +1,46 @@
-function scrollToSection(id) {
-  document.getElementById(id).scrollIntoView({
-    behavior: "smooth"
-  });
+
+
+function scrollToSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
 }
 
-const sendButton = document.getElementById("sendButton");
-if (sendButton) {
-  sendButton.addEventListener("click", () => {
-    alert("Received your message!");
-  });
+
+console.log("JS Loaded");
+
+const form = document.getElementById('contact-form');
+const statusEl = document.getElementById('status');
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  statusEl.innerHTML = "⏳ Sending..."; // 👈 ADD THIS
+
+  const data = new FormData(form);
+
+  try {
+    const response = await fetch("https://formspree.io/f/mqegjnoe", {
+      method: "POST",
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      statusEl.innerHTML = "🚀 Got Your Message Will Contact You Soon";
+      form.reset();
+    } else {
+      statusEl.innerHTML = "❌ Something went wrong!";
+    }
+  } catch (error) {
+    statusEl.innerHTML = "❌ Network error!";
+  }
+});
+
+function scrollToSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
 }

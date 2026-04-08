@@ -74,15 +74,19 @@
         </article>
       </div>
     </section>
+  <form action="https://formspree.io/f/mqegjnoe" method="POST" id="contact-form">
+  <section id="contact">
+    <h2>Contact</h2>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <input type="text" placeholder="Your Name">
-      <input type="email" placeholder="Your Email">
-      <textarea placeholder="Message"></textarea>
-      <button type="button" id="sendButton">Send</button>
-    </section>
-  </main>
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Message" required></textarea>
+
+    <button type="submit">Send</button>
+    <p id="status" style="margin-top:10px; font-weight:bold;"></p>
+  </section>
+</form>
+</main>
 
   <footer>
     <p>© 2026 Yash</p>
