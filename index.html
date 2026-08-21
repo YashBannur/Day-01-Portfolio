@@ -1,140 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yash | Frontend Developer</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Yash — Java Full Stack Developer portfolio. Projects, skills, journey and contact." />
+  <title>Yash — Java Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="cursor-glow" aria-hidden="true"></div>
 
-  <header>
-    <h1>Yash</h1>
-    <nav>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Yash home">
+      <span class="brand-mark">Y</span><span>YASH</span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Main navigation">
       <a href="#about">About</a>
+      <a href="#stack">Stack</a>
       <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact" class="nav-cta">Let's talk ↗</a>
     </nav>
   </header>
 
-   <!-- Hero Section
-   - A welcoming introduction with a brief description and a call-to-action button to view projects. -->
   <main>
-    <section class="hero">
-      <h2>Hello, I'm Yash 👋</h2>
-      <p>Frontend Developer crafting clean, responsive user interfaces.</p>
-      <button type="button" onclick="scrollToSection('projects')">View Work</button>
-    </section>
-
-    <!-- About Me Section
-    - A concise bio highlighting my passion for frontend development and your approach to building interfaces. -->
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I am a passionate developer learning frontend step by step. I enjoy building modern interfaces with thoughtful layouts, smooth interactions, and strong visual hierarchy.</p>
-    </section>
-
-    <!-- Projects Section
-- A showcase of my projects with images, titles, and brief descriptions. Each project card has a hover effect that reveals more details about the project. -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-    <a href="https://yashbannur.github.io/Day-01-Portfolio/" target="_blank">
-      <article class="card">
-
-        <div class="card-image-wrapper">
-        <img src="./Assets/01-Project.png" class="card-image">
-
-        <div class="card-description">
-         A clean and modern portfolio website showcasing my frontend development skills. Built with HTML, CSS, and JavaScript with smooth animations and responsive design.
+    <section id="home" class="hero section-pad">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span></span> OPEN TO OPPORTUNITIES</div>
+        <p class="hero-kicker">JAVA FULL STACK DEVELOPER</p>
+        <h1>Building useful things<br><em>with code.</em></h1>
+        <p class="hero-text">I'm Yash — a developer focused on Java full-stack development, clean interfaces and practical products that solve real problems.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">Explore my work <span>↗</span></a>
+          <a class="text-link" href="#contact">Get in touch <span>→</span></a>
+        </div>
+        <div class="hero-meta">
+          <span>Based in India</span><span class="dot"></span><span>Java · React · SQL</span>
         </div>
       </div>
 
-         <div class="card-content">
-         <h4>My Portfolio</h4>
-          </div>
-
-      </article>
-    </a>
-
-
-
-      <a href="https://yashbannur.github.io/Day-02-Resume/" target="_blank">
-      <article class="card">
-
-        <div class="card-image-wrapper">
-        <img src="./Assets/02-Project.png" class="card-image">
-
-        <div class="card-description">
-        A responsive resume website showcasing my skills, projects, and contact details with a clean and professional design.
+      <div class="hero-visual reveal delay-1">
+        <div class="portrait-card">
+          <div class="portrait-top"><span>PROFILE / 01</span><span>2026</span></div>
+          <img src="./Assets/Yashphoto.png" alt="Yash portrait" />
+          <div class="portrait-bottom"><strong>YASH</strong><span>DEVELOPER</span></div>
         </div>
+        <div class="floating-note note-one">01<br><small>BUILD</small></div>
+        <div class="floating-note note-two">⌘<br><small>CREATE</small></div>
       </div>
+    </section>
 
-         <div class="card-content">
-         <h4>Resume</h4>
-          </div>
+   <div class="ticker" aria-label="Technologies">
+  <div class="ticker-track">
 
-      </article>
-    </a>
+    <!-- First set -->
+    <div class="ticker-group">
+      <span>JAVA</span>
+      <b>✦</b>
+
+      <span>SPRING BOOT</span>
+      <b>✦</b>
+
+      <span>REACT</span>
+      <b>✦</b>
+
+      <span>JAVASCRIPT</span>
+      <b>✦</b>
+
+      <span>SQL</span>
+      <b>✦</b>
+
+      <span>MONGODB</span>
+      <b>✦</b>
+
+      <span>GIT</span>
+      <b>✦</b>
+    </div>
+
+    <!-- Exact duplicate -->
+    <div class="ticker-group" aria-hidden="true">
+      <span>JAVA</span>
+      <b>✦</b>
+
+      <span>SPRING BOOT</span>
+      <b>✦</b>
+
+      <span>REACT</span>
+      <b>✦</b>
+
+      <span>JAVASCRIPT</span>
+      <b>✦</b>
+
+      <span>SQL</span>
+      <b>✦</b>
+
+      <span>MONGODB</span>
+      <b>✦</b>
+
+      <span>GIT</span>
+      <b>✦</b>
+
+       <span>JAVA</span>
+      <b>✦</b>
+
+      <span>SPRING BOOT</span>
+      <b>✦</b>
+
+      <span>REACT</span>
+      <b>✦</b>
+
+      <span>JAVASCRIPT</span>
+      <b>✦</b>
+ <span>JAVA</span>
+      <b>✦</b>
+
+      <span>SPRING BOOT</span>
+      <b>✦</b>
+
+      <span>REACT</span>
+      <b>✦</b>
+
+      <span>JAVASCRIPT</span>
+      <b>✦</b>
+     <span>JAVA</span>
+      <b>✦</b>
+
+      <span>SPRING BOOT</span>
+      <b>✦</b>
+
+      <span>REACT</span>
+      <b>✦</b>
+
     
+    </div>
 
-    <a href="https://yashbannur.github.io/Day-03-LandingPage/" target="_blank">
-     <article class="card">
+  </div>
+</div>
 
-       <div class="card-image-wrapper">
-       <img src="./Assets/04-Project.png" class="card-image">
-
-       <div class="card-description">
-       A modern landing page built using HTML and CSS, focusing on clean layout and responsive design.
-       </div>
-     </div>
-
-        <div class="card-content">
-        <h4>Landing Page</h4>
-         </div>
-
-     </article>
-   </a>
-
-        <a href="https://yashbannur.github.io/Day-04-Clock/" target="_blank">
-      <article class="card">
-
-        <div class="card-image-wrapper">
-        <img src="./Assets/03-Project.png" class="card-image">
-
-        <div class="card-description">
-       A real-time digital clock built using JavaScript that updates every second, demonstrating basic DOM manipulation and time-based functionality.
+    <section id="about" class="section section-pad split-section">
+      <div class="section-label reveal"><span>01</span> ABOUT</div>
+      <div class="section-content reveal delay-1">
+        <h2>Learning fast.<br><span>Building for real.</span></h2>
+        <p class="lead">I'm a Computer Science Engineering student and Java Full Stack developer in progress. I like turning ideas into working products — from frontend interactions to backend logic and databases.</p>
+        <div class="about-grid">
+          <div><span class="stat">01</span><h3>Problem solver</h3><p>Comfortable breaking a feature into smaller, understandable pieces and building it step by step.</p></div>
+          <div><span class="stat">02</span><h3>Project driven</h3><p>I learn best by shipping: portfolio work, full-stack applications, database practice and coding problems.</p></div>
+          <div><span class="stat">03</span><h3>Always learning</h3><p>Currently strengthening Java, Spring Boot, SQL, DSA and modern full-stack development.</p></div>
         </div>
       </div>
+    </section>
 
-         <div class="card-content">
-         <h4>Digital Clock</h4>
-          </div>
-
-      </article>
-    </a>
-
-
-
+    <section id="stack" class="section section-dark section-pad">
+      <div class="section-label reveal"><span>02</span> TOOLKIT</div>
+      <div class="stack-layout">
+        <div class="reveal"><h2>My current<br><em>stack.</em></h2><p class="muted">Tools I use to turn an idea into a usable application.</p></div>
+        <div class="skills-grid reveal delay-1">
+          <div class="skill"><span>01</span><strong>Java</strong><small>Core Java · OOP · Collections</small></div>
+          <div class="skill"><span>02</span><strong>Spring Boot</strong><small>REST APIs · Backend</small></div>
+          <div class="skill"><span>03</span><strong>React</strong><small>Components · React Router</small></div>
+          <div class="skill"><span>04</span><strong>JavaScript</strong><small>DOM · ES6 · Interactions</small></div>
+          <div class="skill"><span>05</span><strong>SQL</strong><small>Queries · Joins · Database</small></div>
+          <div class="skill"><span>07</span><strong>HTML / CSS</strong><small>Responsive UI · Layout</small></div>
+          <div class="skill"><span>08</span><strong>Git / GitHub</strong><small>Version control · Projects</small></div>
+        </div>
       </div>
     </section>
-  <form action="https://formspree.io/f/mqegjnoe" method="POST" id="contact-form">
-  <section id="contact">
-    <h2>Contact</h2>
 
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Message" required></textarea>
+    <section id="projects" class="section section-pad projects-section">
+      <div class="section-head reveal">
+        <div class="section-label"><span>03</span> SELECTED WORK</div>
+        <h2>Things I've <em>built.</em></h2>
+        <p>Projects are where I turn learning into something tangible.</p>
+      </div>
 
-    <button type="submit">Send</button>
-    <p id="status" style="margin-top:10px; font-weight:bold;"></p>
-  </section>
-</form>
-</main>
+      <div class="projects-list">
+        <article class="project featured reveal">
+          <div class="project-index">01</div>
+          <div class="project-main">
+            <div class="project-tag">FULL STACK / JAVA</div>
+            <h3>YForge</h3>
+            <p>A practical learning and management platform built around students, trainers, submissions and progress. Designed as a real-world full-stack product rather than a simple demo.</p>
+            <div class="chips"><span>Java</span><span>Spring Boot</span><span>React</span><span>SQL</span></div>
+            <a class="project-link" href="https://y-forge-inky.vercel.app/" target="_blank" rel="noopener">View live project ↗</a>
+          </div>
+          <div class="project-art art-yforge"><span>YF</span><small>01 / PRODUCT</small></div>
+        </article>
 
-  <footer>
-    <p>© 2026 Yash</p>
-  </footer>
+        <article class="project reveal">
+          <div class="project-index">02</div>
+          <div class="project-main">
+            <div class="project-tag">WEB APPLICATION</div>
+            <h3>Hostel Complaint Management</h3>
+            <p>Role-based complaint workflow for students and wardens — registration, assignment, status updates and feedback.</p>
+            <div class="chips"><span>Servlets</span><span>Tomcat</span><span>MySQL</span><span>JavaScript</span></div>
+          </div>
+          <div class="project-art art-hostel"><span>HC</span><small>02 / SYSTEM</small></div>
+        </article>
 
+        <article class="project reveal">
+          <div class="project-index">03</div>
+          <div class="project-main">
+            <div class="project-tag">FULL STACK</div>
+            <h3>Hospital Appointment System</h3>
+            <p>Appointment booking experience with separate user roles and a full-stack workflow for managing doctors and bookings.</p>
+            <div class="chips"><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span></div>
+          </div>
+          <div class="project-art art-hospital"><span>HA</span><small>03 / APP</small></div>
+        </article>
+      </div>
+
+    
+    </section>
+
+    <section id="journey" class="section section-dark section-pad">
+      <div class="section-label reveal"><span>04</span> JOURNEY</div>
+      <div class="journey-layout">
+        <div class="reveal"><h2>From learning<br>to <em>shipping.</em></h2></div>
+        <div class="timeline reveal delay-1">
+          <div class="timeline-item"><span>NOW</span><div><h3>Java Full Stack Development</h3><p>Deepening Java, SQL, Spring Boot, REST APIs, React and DSA through structured learning and projects.</p></div></div>
+          <div class="timeline-item"><span>2026</span><div><h3>Android App Development + GenAI</h3><p>Hands-on work with Kotlin, Android Studio, Jetpack Compose and Generative AI during internship training.</p></div></div>
+          <div class="timeline-item"><span>ONGOING</span><div><h3>Daily coding practice</h3><p>Building consistency with Java problems, SQL practice and small frontend projects.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section-pad">
+      <div class="contact-inner reveal">
+        <div class="section-label"><span>05</span> CONTACT</div>
+        <h2>Have a role,<br>project or <em>idea?</em></h2>
+        <p>I'm looking for opportunities where I can contribute, learn quickly and grow as a Java Full Stack Developer.</p>
+        <form action="https://formspree.io/f/mqegjnoe" method="POST" id="contact-form">
+          <div class="form-row"><input type="text" name="name" placeholder="Your name" required><input type="email" name="email" placeholder="Your email" required></div>
+          <textarea name="message" placeholder="Tell me a little about it..." required></textarea>
+          <button class="btn btn-primary" type="submit">Send message <span>↗</span></button>
+          <p id="status" role="status"></p>
+        </form>
+        <div class="contact-links">
+          <a href="https://github.com/YashBannur" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://github.com/YashBannur/java-fullstack-journey" target="_blank" rel="noopener">Java Journey ↗</a>
+          <a href="mailto:your-email@example.com">Email ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 YASH</span><span>BUILT WITH HTML · CSS · JS</span><a href="#home">BACK TO TOP ↑</a></footer>
   <script src="script.js"></script>
 </body>
 </html>
